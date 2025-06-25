@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de Vacaciones Chile</title>
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <header>
+      <h1>Calculadora de Vacaciones Legales en Chile</h1>
+      <p>Ingresa las fechas de inicio y fin de tu período laboral para calcular tus días de vacaciones.</p>
+    </header>
+
+    <main>
+      <div class="calculator">
+        <div class="date-inputs">
+          <div class="input-group">
+            <label for="startDate">Fecha de Inicio de Contrato:</label>
+            <input type="date" id="startDate" name="startDate">
+          </div>
+          <div class="input-group">
+            <label for="endDate">Fecha de Fin de Contrato:</label>
+            <input type="date" id="endDate" name="endDate">
+          </div>
+        </div>
+
+        <div class="progressive-vacation">
+          <label for="progressive">¿Tienes derecho a feriado progresivo?</label>
+          <select id="progressive" name="progressive">
+            <option value="0">No</option>
+            <option value="1">Sí, 1 día</option>
+            <option value="2">Sí, 2 días</option>
+            <option value="3">Sí, 3 días</option>
+            <option value="4">Sí, 4 días</option>
+            <option value="5">Sí, 5 días</option>
+            <option value="6">Sí, 6 días</option>
+            <option value="7">Sí, 7 días</option>
+          </select>
+        </div>
+
+        <button id="calculateBtn">Calcular Vacaciones</button>
+
+        <div id="result" class="result-container" style="display: none;">
+          <h2>Resultado del Cálculo</h2>
+          <p>Los días de vacaciones a los que tienes derecho son:</p>
+          <p class="vacation-days">15 días</p>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>Nota: Este cálculo es una estimación basada en la legislación laboral chilena (15 días hábiles por año de
+        servicio). Para un cálculo exacto, consulta con tu empleador o la Dirección del Trabajo.</p>
+    </footer>
+  </div>
+
+</body>
+<script src="scripts/script.js"></script>
+
+</html>
