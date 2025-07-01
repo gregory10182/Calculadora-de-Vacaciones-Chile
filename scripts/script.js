@@ -45,9 +45,6 @@ document.addEventListener("DOMContentLoaded", () => {
           return;
         }
         startDate.setMonth(startDate.getMonth() + months);
-      } else {
-        resultPrint("No tienes derecho a vacaciones.");
-        return;
       }
       let remainingDays = calcularDiasEntreFechas(startDate, endDate);
       console.log(`Días restantes: ${remainingDays}`);
