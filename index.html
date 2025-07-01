@@ -28,19 +28,9 @@
             <input type="date" id="endDate" name="endDate">
           </div>
         </div>
-
-        <div class="progressive-vacation">
-          <label for="progressive">¿Tienes derecho a feriado progresivo?</label>
-          <select id="progressive" name="progressive">
-            <option value="0">No</option>
-            <option value="1">Sí, 1 día</option>
-            <option value="2">Sí, 2 días</option>
-            <option value="3">Sí, 3 días</option>
-            <option value="4">Sí, 4 días</option>
-            <option value="5">Sí, 5 días</option>
-            <option value="6">Sí, 6 días</option>
-            <option value="7">Sí, 7 días</option>
-          </select>
+        <div class="input-group">
+          <label for="used-vacations-label">Cuantos dias de vacaciones has usado?</label>
+          <input type="number" id="usedVacations" name="usedVacations" min="0" value="0">
         </div>
 
         <button id="calculateBtn">Calcular Vacaciones</button>
@@ -48,7 +38,7 @@
         <div id="result" class="result-container" style="display: none;">
           <h2>Resultado del Cálculo</h2>
           <p>Los días de vacaciones a los que tienes derecho son:</p>
-          <p class="vacation-days">15 días</p>
+          <p class="vacation-days"></p>
         </div>
       </div>
     </main>
